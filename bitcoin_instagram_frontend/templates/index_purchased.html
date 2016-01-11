@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block body %}
+<ul class="entries grid">
+    {% for entry in purchased %}
+    <li class="grid-item" data-id="{{ entry.id }}">
+        <a href="{{ entry.photopath }}">
+           <img src="{{ entry.photopath }}" height="150" width="150"></img>
+           <span><span>{{ entry.id }}</span></span>
+	</a>   
+    </li>
+    {% else %}
+        <li><em>No entries yet.</em></li>
+    {% endfor %}
+</ul>
+{% endblock %}

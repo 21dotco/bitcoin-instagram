@@ -1,0 +1,87 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background: white;
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: #377ba8;
+}
+h1,
+h2 {
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+h1 {
+    border-bottom: 2px solid #eee;
+}
+h2 {
+    font-size: 1.2em;
+}
+
+.header {
+    background: #eee;
+    padding: 10px;
+}
+.page {
+    margin: 0;
+    padding: 20px 10px;
+}
+
+.entries {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+.entries li {
+    margin: 10px;
+    position: relative;
+    width: 150px;
+    cursor: pointer;
+}
+/*
+.entries li h2 {
+    margin-left: -1em;
+}
+*/
+.entries li span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: opacity 500ms;
+    opacity: 0;
+}
+.entries li:hover span {
+    opacity: 1;
+}
+.entries li span span:nth-child(2) {
+    position: absolute;
+    right: 5px;
+}
+/*
+.add-entry {
+    font-size: 0.9em;
+    border-bottom: 1px solid #ccc;
+}
+.add-entry dl {
+    font-weight: bold;
+}
+.flash {
+    background: #cee5F5;
+    padding: 0.5em;
+    border: 1px solid #aacbe2;
+}
+.error {
+    background: #f0d6d6;
+    padding: 0.5em;
+}
+*/
+
+.center {
+  text-align: center;
+}

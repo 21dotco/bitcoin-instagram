@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+<ul class="entries grid">
+    {% for entry in photos %}
+    <li class="grid-item" data-id="{{ entry.id }}">
+        <img src="{{ entry.photopath }}" height="150" width="150"></img>
+        <span><span>{{ entry.id }}</span><span>{{ entry.price }}</span></span>
+    </li>
+    {% else %}
+        <li><em>No entries yet.</em></li>
+    {% endfor %}
+</ul>
+<script type=text/javascript src="/static/index.js"></script>
+{% endblock %}

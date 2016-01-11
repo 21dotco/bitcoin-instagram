@@ -1,0 +1,26 @@
+{
+  "name": "instagram-downloader",
+  "version": "1.0.0",
+  "description": "downloads instagram files from account",
+  "main": "instagram.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexchia/instagram-downloader.git"
+  },
+  "author": "Alexander Chia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexchia/instagram-downloader/issues"
+  },
+  "homepage": "https://github.com/alexchia/instagram-downloader#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "commander": "^2.9.0",
+    "gm": "^1.21.1",
+    "mkdirp": "^0.5.1",
+    "request": "^2.67.0"
+  }
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<title>Photos</title>
+
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css">
+<link rel=stylesheet type=text/css href="/static/style.css">
+<script type=text/javascript src="/static/main.js"></script>
+
+<div class="header">
+  <h1>Bitcoin Instagram</h1>
+  <p class="center">Click an image for purchase instructions</p>
+</div>
+<div class=page>
+  {% block body %}{% endblock %}
+</div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="theModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Run the following command on your 21BC CLI</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+            <pre class="command-line"></pre>
+          </p>
+          <button class="copy-clipboard">Copy in clipboard</button>
+        </div
+      </div>
+    </div>
+  </div>
+</div>
