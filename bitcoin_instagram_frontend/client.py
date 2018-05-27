@@ -6,8 +6,8 @@ import sqlite3
 
 #import from the 21 Developer Library
 from two1.commands.config import Config
-from two1.lib.wallet import Wallet
-from two1.lib.bitrequests import BitTransferRequests
+from two1.wallet import Wallet
+from two1.bitrequests import BitTransferRequests
 
 #set up bitrequest client for BitTransfer requests
 wallet = Wallet()

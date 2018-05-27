@@ -14,8 +14,8 @@ from flask import send_from_directory
 from flask.ext.basicauth import BasicAuth
 
 #Import from the 21 Developer Library
-from two1.lib.wallet import Wallet
-from two1.lib.bitserv.flask import Payment
+from two1.wallet import Wallet
+from two1.bitserv.flask import Payment
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 wallet = Wallet()
